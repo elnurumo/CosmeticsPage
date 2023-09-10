@@ -1,1 +1,1 @@
-[Live link: (https://elnurumo.github.io/CosmeticsPage/product)]
+[[Live link]: (https://elnurumo.github.io/CosmeticsPage/product)]
