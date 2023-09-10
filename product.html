@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./image/mobile-logo.svg" type="image/x-icon">
+    <title>Məhsulun içi</title>
+</head>
+
+<body>
+    <section class="header_area">
+        <div class="header">
+            <div class="header__logo">
+                <!-- mobile -->
+                <img class="mobile_svg" src="./image/burger.svg" alt="burger">
+                <a href="./product.html">
+                    <!-- desktop -->
+                    <img class="desktop-svg" src="./image/Group 505.svg" alt="LOGO">
+                    <!-- mobile -->
+                    <img class="mobile_svg" src="./image/mobile-logo.svg" alt="mobile-logo">
+                </a>
+            </div>
+
+            <div class="header__search header__language">
+                <img src="./image/search-icon.svg" class="search_icon" alt="search-icon">
+                <!-- desktop -->
+                <input type="search" placeholder="Məhsul axtarın" class="search">
+                <img class="lang_icon" src="./image/globe-icon.svg" alt="globe-icon">
+                <p class="lang_icon show_link">
+                    AZ
+                </p>
+                <img class="lang_icon arrow" src="./image/arrow-lang.svg" alt="arrow-lang">
+                <ul class="lang_links">
+                    <li class="lang_link">AZ</li>
+                    <li class="lang_link">EN</li>
+                    <li class="lang_link">RU</li>
+                </ul>
+            </div>
+
+            <div class=" header__account">
+                <!-- Desktop -->
+                <img class="account_icon desktop-svg user" src="./image/user.svg" alt="user">
+                <img class="account_icon desktop-svg" src="./image/heart.svg" alt="heart">
+                <img class="account_icon desktop-svg" src="./image/bag.svg" alt="bag">
+                <a href="./profile_ordered.html"><img class="account_icon desktop-svg" src="./image/img-account.svg"
+                        alt="img-account"></a>
+
+                <!-- mobile -->
+                <img class="mobile_svg" src="./image/search_mobile.svg" alt="search-mobile">
+                <img class="mobile_svg user" src="./image/user-mobile.svg" alt="user-mobile">
+                <img class="mobile_svg" src="./image/heart-mobile.svg" alt="heart-mobile">
+                <div class="mobile_svg bag_mobile"><img src="./image/bag-mobile.svg" alt="bag-mobile"></div>
+            </div>
+        </div>
+
+        <div class="navbar_area">
+            <div class="navbar">
+                <ul class="nav_links">
+                    <li class="nav_link">YENİ</li>
+                    <li class="nav_link">BRENDLƏR</li>
+                    <li class="nav_link">ENDİRİMLƏR</li>
+                    <li class="nav_link"><a href="./product.html">MAKİYAJ</a></li>
+                    <li class="nav_link">ÜZ</li>
+                    <li class="nav_link">SAÇ</li>
+                    <li class="nav_link">BƏDƏN</li>
+                    <li class="nav_link">K-BEAUTY</li>
+                    <li class="nav_link">FIRÇALAR VƏ AKSESSUARLAR</li>
+                    <li class="nav_link">HƏDİYYƏLİK DƏSTLƏR</li>
+                </ul>
+            </div>
+        </div>
+        <br>
+    </section>
+
+    <form class="sign_in_fixed">
+        <div class="sing_in_fixed_area">
+            <ul class="sign_in_sign_up">
+                <li class="sign_in_link acvtive_sign_in">Daxil ol</li>
+                <li class="sign_in_link active_sign_up">Qeydiyyat</li>
+            </ul>
+            <div class="sign_in_main">
+                <h4>Email</h4>
+                <input placeholder="Emailinizi daxil edin" type="email">
+                <h4 class="password_name">Şifrə</h4>
+                <div class="password_area">
+                    <input class="password" type="password">
+                    <i class="fa-regular fa-eye eye togglePassword"></i>
+                    <!-- <i  class="fa-regular fa-eye-slash eye"></i> -->
+                </div>
+                <div class="forget_password_area">
+                    <h4 class="forget_password">Şifrəmi unutdum</h4>
+                </div>
+                <button class="sign_in_button">Daxil ol</button>
+            </div>
+        </div>
+    </form>
+    <div class="loginOverlay"></div>
+
+    <section class="product_area">
+        <div class="place_now">
+            <ul class="place_links">
+                <li class="place_link"><a href="#">Ana səhifə</a></li>
+                <img class="place_arrow" src="./image/arrow-place.svg" alt="arrow-place">
+                <li class="place_link"><a href="#">Makiyaj</a></li>
+                <img class="place_arrow" src="./image/arrow-place.svg" alt="arrow-place">
+                <li class="place_link"><a href="#">Göz makiyajı</a></li>
+                <img class="place_arrow" src="./image/arrow-place.svg" alt="arrow-place">
+                <li class="place_link"><a href="#">Göz farı</a></li>
+                <img class="place_arrow" src="./image/arrow-place.svg" alt="arrow-place">
+                <li class="place_link active">Flormar göz farı</li>
+            </ul>
+        </div>
+
+        <div class="product">
+            <div class="product_imgs">
+                <img class="product_img product_active_img" src="./image/product-img-1.svg" alt="img-1">
+                <img class="product_img" src="./image/product-img-2.svg" alt="img-2">
+                <img class="product_img" src="./image/product-img-3.svg" alt="img-3">
+                <img class="product_img" src="./image/product-img-4.svg" alt="img-4">
+                <img class="product_img" src="./image/product-img-5.svg" alt="img-5">
+                <!-- <img class="product_img" src="./image/product-img-6.svg" alt="img-6"> -->
+            </div>
+
+            <div class="main_img_area">
+                <!-- <img class="arrow" src="./image/arrow_left.svg" alt="arrow-left"> -->
+                <div class="main_img">
+                    <img class="heart" src="./image/img_on_heART_FOR_FAVLIST.svg" alt="heart">
+                    <img src="./image/main-product-image.svg" alt="main-image">
+                </div>
+
+                <div class="main_img">
+                    <img class="heart" src="./image/img_on_heART_FOR_FAVLIST.svg" alt="heart">
+                    <img src="./image/main_product_image-2.svg" alt="main-image">
+                </div>
+
+                <div class="main_img">
+                    <img class="heart" src="./image/img_on_heART_FOR_FAVLIST.svg" alt="heart">
+                    <img src="./image/main_product_image-3.svg" alt="main-image">
+                </div>
+
+                <div class="main_img">
+                    <img class="heart" src="./image/img_on_heART_FOR_FAVLIST.svg" alt="heart">
+                    <img src="./image/main_product_image-4.svg" alt="main-image">
+                </div>
+
+                <div class="main_img">
+                    <img class="heart" src="./image/img_on_heART_FOR_FAVLIST.svg" alt="heart">
+                    <img src="./image/main_product_image-5.svg" alt="main-image">
+                </div>
+
+                <!-- <div class="main_img">
+                    <img class="heart" src="./image/img_on_heART_FOR_FAVLIST.svg" alt="heart">
+                    <img src="./image/main-product-image.svg" alt="main-image">
+                </div> -->
+                <!-- <img class="arrow" src="./image/arrow-right.svg" alt="arrow-right"> -->
+            </div>
+
+            <!-- <div class="main_points">
+                <div class="point"></div>
+                <div class="point"></div>
+                <div class="point"></div>
+            </div> -->
+
+            <div class="product-info">
+                <h1 class="product-name">
+                    Flormar Göz Farı - Diamonds Terracotta Eyeshadow Golden Eyes 5 G 8690604083886 0212042
+                </h1>
+                <div class="product_rating_comment">
+                    <img src="./image/star-rating-product.svg" alt="Star-rating">
+                    <p class="rating_voice">226 dəyərləndirmə</p>
+                    <p class="product_comment">57 rəy</p>
+                </div>
+
+                <!-- desktop -->
+
+                <div class="product_price">
+                    <p class="price"><span class="old_price">359 <span>₼</span></span> <span class="new_price">240
+                            <span>₼</span></span></p>
+                </div>
+
+                <div class="product_color_area">
+                    <p class="product_color_info">
+                        <span class="product_size_color_info">Rəng:</span> Dark 1 (GO) - dark, golden olive <span
+                            class="last_word">undertones</span>
+                    </p>
+                    <br>
+                    <p class="product_size_info">
+                        <span class="product_size_color_info">Ölçü:</span> 0.28 oz/ 8 g
+                    </p>
+                    <div class="product_colors">
+                        <div class="product_color"><img class="different_hover" src="./image/color-product-1.svg"
+                                tabindex="1" alt="color-1"></div>
+                        <div class="product_color different_color"><img class="different_hover"
+                                src="./image/color-product-2.svg" tabindex="1" alt="color-2"></div>
+                        <div class="product_color different_color"><img class="different_hover"
+                                src="./image/color-product-3.svg" tabindex="1" alt="color-3"></div>
+                        <div class="product_color"><img class="different_hover" src="./image/color-product-4.svg"
+                                tabindex="1" alt="color-product-4"></div>
+                        <div class="product_color"><img class="different_hover" class="different_color" tabindex="1"
+                                src="./image/color-product-5.svg" alt="color-5"></div>
+                        <div class="product_color"><img class="different_hover" src="./image/color-product-6.svg"
+                                tabindex="1" alt="color-product-6"></div>
+                        <div class="product_color different_color"><img class="different_hover" tabindex="1"
+                                src="./image/color-product-7.svg" alt="color-7"></div>
+                        <div class="product_color "><img class="different_hover" src="./image/color-product-8.svg"
+                                tabindex="1" alt="color-8"></div>
+                        <div class="product_color"><img class="different_hover" src="./image/color-product-9.svg"
+                                tabindex="1" alt="color-9"></div>
+                        <div class="product_color"><img class="different_hover" src="./image/color-product-10.svg"
+                                tabindex="1" alt="color-10"></div>
+                        <div class="product_color"><img class="different_hover" src="./image/color-product-11.svg"
+                                tabindex="1" alt="color-11"></div>
+                        <div class="product_color"><img class="different_hover" src="./image/color-product-12.svg"
+                                tabindex="1" alt="color-12"></div>
+                        <div class="product_color"><img class="different_hover" src="./image/color-product-13.svg"
+                                tabindex="1" alt="color-13"></div>
+                        <div class="product_color"><img class="different_hover" src="./image/color-product-14.svg"
+                                tabindex="1" alt="color-14"></div>
+                        <div class="product_color"><img class="different_hover" src="./image/color-product-15.svg"
+                                tabindex="1" alt="color-15"></div>
+                    </div>
+                </div>
+
+                <div class="product_add_basket_area">
+                    <div class="product_add">
+                        <button class="minus" id="decrement-count">-</button>
+                        <h1 class="number" id="total-count">1</h1>
+                        <button class="plus" id="increment-count">+</button>
+                    </div>
+                    <div class="product_add_button">
+                        <button class="product_cart">
+                            <img class="cart" src="./image/cart-product-add.svg" alt="cart-product-add">
+                            SƏBƏTƏ AT
+                        </button>
+
+                        <button class="product_fav">
+                            <img class="fav" src="./image/heart-PRODUCT.svg" alt="HEART-product-add">
+                            İSTƏK LİSTİNƏ AT
+                        </button>
+                    </div>
+
+                    <div class="product_about_area">
+                        <h1 class="product_about_name">Məhsul haqqında</h1>
+                        <p class="product_about">15 gün ərzində pulsuz qayıt. Ətraflı məlumat üçün vurun. Bu məhsul Nef
+                            Alış-veriş tərəfindən göndəriləcək. Satıcı
+                            araşdırdığınız məhsulun satış qiymətini müəyyənləşdirir.
+                            Mat və inci ana göz kölgəsi palitrası imtiyazını yaşaya bilərsiniz. İstər bir-bir istifadə
+                            edin, istərsə də qarışdıraraq
+                            tətbiq edə bilərsiniz ...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- mobile -->
+    <div class="product_price_mobile form">
+        <p class="price"><span class="old_price">359 <span>₼</span></span> <span
+                class="new_price">240<span>₼</span></span>
+        </p>
+        <button class="product_cart">
+            <img class="cart" src="./image/cart-product-add.svg" alt="cart-product-add">
+            SƏBƏTƏ AT
+        </button>
+    </div>
+
+    <section class="same_product_area">
+        <div class="same_products_name">
+            <h1>Oxşar məhsullar</h1>
+            <h3>Hamısına bax <img src="./image/arrow-same_product.svg" alt="arrow-same_product"></h3>
+        </div>
+
+        <div class="same_products_parent">
+            <!-- <div class="arrow_left">
+                <img src="./image/arrow_left.svg" alt="Arrow">
+            </div> -->
+            <div class="same_products">
+                <div class="product">
+                    <img class="heart" src="./image/img_on_heART_FOR_FAVLIST.svg" alt="img_on_heART_FOR_FAVLIST">
+                    <img src="./image/same-product-1.svg" alt="same-product-1">
+                    <h3><span class="bold">Kerastase</span> Resistance Bain Volumifique Hacimlendirici 50 ml</h3>
+                    <div class="product_rating">
+                        <img src="./image/rating-star-same-product.svg" alt="star-rating-product">
+                        <h4 class="rating">(352)</h4>
+                    </div>
+                    <h1 class="product_price">430 <span>₼</span></h1>
+                </div>
+
+                <div class="product">
+                    <img class="heart" src="./image/img_on_heART_FOR_FAVLIST.svg" alt="img_on_heART_FOR_FAVLIST">
+                    <img src="./image/same-product-2.svg" alt="same-product-2">
+                    <h3>Beauty Bronze & Glam Kit bronzeglamkit</h3>
+                    <div class="product_rating">
+                        <img src="./image/rating-star-same-product.svg" alt="star-rating-product">
+                        <h4 class="rating">(96)</h4>
+                    </div>
+                    <h1 class="product_price"><span class="old_price">359</span> <span class="old">₼</span> 240
+                        <span>₼</span>
+                    </h1>
+                </div>
+
+                <div class="product">
+                    <img class="heart" src="./image/img_on_heART_FOR_FAVLIST.svg" alt="img_on_heART_FOR_FAVLIST">
+                    <img src="./image/same-product-3.svg" alt="same-product-3">
+                    <h3>Blond Absolu Bain Lumiere Şampuan 250 ml</h3>
+                    <div class="product_rating">
+                        <img src="./image/rating-star-same-product.svg" alt="star-rating-product">
+                        <h4 class="rating">(12)</h4>
+                    </div>
+                    <h1 class="product_price">199 <span>₼</span></h1>
+                </div>
+
+                <div class="product">
+                    <img class="heart" src="./image/img_on_heART_FOR_FAVLIST.svg" alt="img_on_heART_FOR_FAVLIST">
+                    <img src="./image/same-product-4.svg" alt="same-product-4">
+                    <h3>Selin Beauty Marilyn Ruj SC-RYB</h3>
+                    <div class="product_rating">
+                        <img src="./image/rating-star-same-product.svg" alt="star-rating-product">
+                        <h4 class="rating">(1040)</h4>
+                    </div>
+                    <h1 class="product_price">289 <span>₼</span></h1>
+                </div>
+
+                <div class="product">
+                    <img class="heart" src="./image/img_on_heART_FOR_FAVLIST.svg" alt="img_on_heART_FOR_FAVLIST">
+                    <img src="./image/same-product-5.svg" alt="same-product-5">
+                    <h3>High Impact Maskara Set</h3>
+                    <div class="product_rating">
+                        <img src="./image/rating-star-same-product.svg" alt="star-rating-product">
+                        <h4 class="rating">(6776)</h4>
+                    </div>
+                    <h1 class="product_price">430 <span>₼</span></h1>
+                </div>
+            </div>
+            <!-- <div class="arrow_right">
+                <img src="./image/same-product-carusel-arrow.svg" alt="Arrow">
+            </div> -->
+        </div>
+    </section>
+
+    <section class="advertisement_area">
+        <div class="advertisement">
+            <!-- desktop -->
+            <img class="desktop_reklam" src="./image/advertisement_area.svg" alt="reklam">
+            <!-- mobile -->
+            <img class="mobile_reklam" src="./image/mobile-reklam.svg" alt="mobile-reklam">
+        </div>
+    </section>
+
+    <section class="same_product_area">
+        <div class="same_products_name">
+            <h1>Bu məhsulu alan insanlar bunları da alıblar</h1>
+            <h3>Hamısına bax <img src="./image/arrow-same_product.svg" alt="arrow-same_product"></h3>
+        </div>
+
+        <div class="same_products_parent">
+            <!-- <div class="arrow_left">
+                <img src="./image/same-product-carusel-arrow.svg" alt="Arrow">
+            </div> -->
+            <div class="same_products">
+                <div class="product">
+                    <img class="heart" src="./image/img_on_heART_FOR_FAVLIST.svg" alt="img_on_heART_FOR_FAVLIST">
+                    <img src="./image/same-product-6.svg" alt="same-product-1">
+                    <h3><span class="bold">Kerastase</span> Resistance Bain Volumifique Hacimlendirici 50 ml</h3>
+                    <div class="product_rating">
+                        <img src="./image/rating-star-same-product.svg" alt="star-rating-product">
+                        <h4 class="rating">(352)</h4>
+                    </div>
+                    <h1 class="product_price">430 <span>₼</span></h1>
+                </div>
+
+                <div class="product">
+                    <img class="heart" src="./image/img_on_heART_FOR_FAVLIST.svg" alt="img_on_heART_FOR_FAVLIST">
+                    <img src="./image/same-product-7.svg" alt="same-product-2">
+                    <h3>Beauty Bronze & Glam Kit bronzeglamkit</h3>
+                    <div class="product_rating">
+                        <img src="./image/rating-star-same-product.svg" alt="star-rating-product">
+                        <h4 class="rating">(12)</h4>
+                    </div>
+                    <h1 class="product_price"> 199 <span>₼</span>
+                    </h1>
+                </div>
+
+                <div class="product">
+                    <img class="heart" src="./image/img_on_heART_FOR_FAVLIST.svg" alt="img_on_heART_FOR_FAVLIST">
+                    <img src="./image/same-product-8.svg" alt="same-product-3">
+                    <h3>Blond Absolu Bain Lumiere Şampuan 250 ml</h3>
+                    <div class="product_rating">
+                        <img src="./image/rating-star-same-product.svg" alt="star-rating-product">
+                        <h4 class="rating">(1040)</h4>
+                    </div>
+                    <h1 class="product_price">289 <span>₼</span></h1>
+                </div>
+
+                <div class="product">
+                    <img class="heart" src="./image/img_on_heART_FOR_FAVLIST.svg" alt="img_on_heART_FOR_FAVLIST">
+                    <img src="./image/same-product-9.svg" alt="same-product-4">
+                    <h3>Selin Beauty Marilyn Ruj SC-RYB</h3>
+                    <div class="product_rating">
+                        <img src="./image/rating-star-same-product.svg" alt="star-rating-product">
+                        <h4 class="rating">(96)</h4>
+                    </div>
+                    <h1 class="product_price"><span class="old_price">359</span> <span class="old">₼</span> 240
+                        <span>₼</span>
+                    </h1>
+                </div>
+
+                <div class="product">
+                    <img class="heart" src="./image/img_on_heART_FOR_FAVLIST.svg" alt="img_on_heART_FOR_FAVLIST">
+                    <img src="./image/same-product-5.svg" alt="same-product-5">
+                    <h3>High Impact Maskara Set</h3>
+                    <div class="product_rating">
+                        <img src="./image/rating-star-same-product.svg" alt="star-rating-product">
+                        <h4 class="rating">(6776)</h4>
+                    </div>
+                    <h1 class="product_price">430 <span>₼</span></h1>
+                </div>
+            </div>
+            <!-- <div class="arrow_right">
+                <img src="./image/same-product-carusel-arrow.svg" alt="Arrow">
+            </div> -->
+        </div>
+    </section>
+
+    <section class="discussion_area">
+        <div class="product_evaluations">
+            <div class="product_evaluation">
+                <div class="evaluatin_name_parent">
+                    <h1 class="evaluatin_name">Məhsul dəyərləndirmə <span class="evaluation_total">(352 rəy)</span></h1>
+                </div>
+                <h4 class="star_rating_name">Məhsulu qiymətləndir</h4>
+                <div class="stars_evaluations">
+                    <i class="rating__star far fa-star"></i>
+                    <i class="rating__star far fa-star"></i>
+                    <i class="rating__star far fa-star"></i>
+                    <i class="rating__star far fa-star"></i>
+                    <i class="rating__star far fa-star"></i>
+                </div>
+                <h4 class="star_rating_name">Rəy</h4>
+                <form class="form-1" action="">
+                    <textarea placeholder="Məhsul haqda fikrinizi bildirin" id="textarea" cols="30"
+                        rows="10"></textarea>
+                    <button class="send_button">Göndər</button>
+                </form>
+
+                <div class="people_comments_for_product_area">
+                    <div class="person_comment">
+                        <div class="person_names_send_date">
+                            <h1 class="person_name">Ul*** Om****</h1>
+                            <h3 class="person_send_date">2 gün əvvəl</h3>
+                        </div>
+                        <div class="person_star">
+                            <img src="./image/person_send_star.svg" alt="star">
+                        </div>
+                        <p class="comment">15 gün ərzində pulsuz qayıt. Ətraflı məlumat üçün vurun. Bu məhsul Nef
+                            Alış-veriş tərəfindən göndəriləcək. Satıcı
+                            araşdırdığınız məhsulun satış qiymətini müəyyənləşdirir. Mat və inci ana göz kölgəsi
+                            palitrası imtiyazını yaşaya
+                            bilərsiniz.</p>
+                    </div>
+
+                    <div class="person_comment">
+                        <div class="person_names_send_date">
+                            <h1 class="person_name">Ba*** Qə******</h1>
+                            <h3 class="person_send_date">2 gün əvvəl</h3>
+                        </div>
+                        <div class="person_star">
+                            <img src="./image/person_send_star.svg" alt="star">
+                        </div>
+                        <p class="comment">Rənglərdə çox gözəl bir məhsuldur. Bunu nə qədər gözlədiyinizi bilmirəm, amma
+                            ölçüsü baxımından çox sevirəm</p>
+                    </div>
+
+                    <div class="person_comment">
+                        <div class="person_names_send_date">
+                            <h1 class="person_name">Na***** Hü******</h1>
+                            <h3 class="person_send_date">2 gün əvvəl</h3>
+                        </div>
+                        <div class="person_star">
+                            <img src="./image/person_send_star.svg" alt="star">
+                        </div>
+                        <p class="comment">Məhsul gözlədiyimdən daha kiçik ölçüdə gəldi. Əlimin ölçüsündə bir məhsul
+                            gözləyirdim, xurma qədər böyük bir məhsul
+                            gəldi. Açığı, ölçüsünü bilsəydim qiymətə dəyər olacağını düşünürəmmi bilmirəm, amma məhsul
+                            sadəcə heyrətamizdir. Rənglər
+                            tam olaraq istədiyim şeydir. Çox tövsiyə edirəm. Ödəndiyim otağa görə peşman deyiləm.</p>
+                    </div>
+
+                    <div class="person_comment">
+                        <div class="person_names_send_date">
+                            <h1 class="person_name">Ba*** Qə******</h1>
+                            <h3 class="person_send_date">2 gün əvvəl</h3>
+                        </div>
+                        <div class="person_star">
+                            <img src="./image/person_send_star.svg" alt="star">
+                        </div>
+                        <p class="comment">Hamı üçün olmalıdır</p>
+                    </div>
+                    <div class="show_more_comment">
+                        <h2 class="more_comment">Daha çox rəy göstər</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rating_product">
+                <div class="degrees">
+                    <h1 class="rating_name">Reytinq</h1>
+                    <img class="degree" src="./image/rating_degree.svg" alt="degree">
+                    <img class="degree" src="./image/rating_degree_4.svg" alt="degree">
+                    <img class="degree" src="./image/rating_degree_3.svg" alt="degree">
+                    <img class="degree" src="./image/rating_degree_2.svg" alt="degree">
+                    <img class="degree" src="./image/rating_degree_1.svg" alt="degree">
+                </div>
+                <div class="rating_degree">
+                    <h1 class="total_rating_name">Ümumi</h1>
+                    <div class="rating_star">
+                        <h1 class="rating">4.8</h1>
+                        <img src="./image/star_rating.svg" alt="star">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="same_product_area">
+        <div class="same_products_name">
+            <h1>Ən çox bəyənilənlər</h1>
+            <h3>Hamısına bax <img src="./image/arrow-same_product.svg" alt="arrow-same_product"></h3>
+        </div>
+
+        <div class="same_products_parent">
+            <!-- <div class="arrow_left">
+                <img src="./image/same-product-carusel-arrow.svg" alt="Arrow">
+            </div> -->
+            <div class="same_products">
+                <div class="product">
+                    <img class="heart" src="./image/img_on_heART_FOR_FAVLIST.svg" alt="img_on_heART_FOR_FAVLIST">
+                    <img src="./image/same-product-10.svg" alt="same-product-1">
+                    <h3><span class="bold">Kerastase</span> Resistance Bain Volumifique Hacimlendirici 50 ml</h3>
+                    <div class="product_rating">
+                        <img src="./image/rating-star-same-product.svg" alt="star-rating-product">
+                        <h4 class="rating">(352)</h4>
+                    </div>
+                    <h1 class="product_price">430 <span>₼</span></h1>
+                </div>
+
+                <div class="product">
+                    <img class="heart" src="./image/img_on_heART_FOR_FAVLIST.svg" alt="img_on_heART_FOR_FAVLIST">
+                    <img src="./image/same-product-11.svg" alt="same-product-2">
+                    <h3><span class="bold">Kerastase</span> Resistance Bain Volumifique Hacimlendirici 50 ml</h3>
+                    <div class="product_rating">
+                        <img src="./image/rating-star-same-product.svg" alt="star-rating-product">
+                        <h4 class="rating">(352)</h4>
+                    </div>
+                    <h1 class="product_price"> 70 <span>₼</span>
+                    </h1>
+                </div>
+
+                <div class="product">
+                    <img class="heart" src="./image/img_on_heART_FOR_FAVLIST.svg" alt="img_on_heART_FOR_FAVLIST">
+                    <img src="./image/same-product-12.svg" alt="same-product-3">
+                    <h3>Blond Absolu Bain Lumiere Şampuan 250 ml</h3>
+                    <div class="product_rating">
+                        <img src="./image/rating-star-same-product.svg" alt="star-rating-product">
+                        <h4 class="rating">(12)</h4>
+                    </div>
+                    <h1 class="product_price">199 <span>₼</span></h1>
+                </div>
+
+                <div class="product">
+                    <img class="heart" src="./image/img_on_heART_FOR_FAVLIST.svg" alt="img_on_heART_FOR_FAVLIST">
+                    <img src="./image/same-product-13.svg" alt="same-product-4">
+                    <h3>Selin Beauty Marilyn Ruj SC-RYB</h3>
+                    <div class="product_rating">
+                        <img src="./image/rating-star-same-product.svg" alt="star-rating-product">
+                        <h4 class="rating">(1040)</h4>
+                    </div>
+                    <h1 class="product_price"> 289 <span>₼</span>
+                    </h1>
+                </div>
+
+                <div class="product">
+                    <img class="heart" src="./image/img_on_heART_FOR_FAVLIST.svg" alt="img_on_heART_FOR_FAVLIST">
+                    <img src="./image/same-product-5.svg" alt="same-product-5">
+                    <h3>High Impact Maskara Set</h3>
+                    <div class="product_rating">
+                        <img src="./image/rating-star-same-product.svg" alt="star-rating-product">
+                        <h4 class="rating">(6776)</h4>
+                    </div>
+                    <h1 class="product_price">430 <span>₼</span></h1>
+                </div>
+            </div>
+            <!-- <div class="arrow_right">
+                <img src="./image/same-product-carusel-arrow.svg" alt="Arrow">
+            </div> -->
+        </div>
+    </section>
+
+    <section class="subscription_area">
+        <div class="subcription">
+            <h1 class="subscription_header">Yeniliklərdən xəbərdar olmaq üçün abunə olun</h1>
+            <div class="subscription_input_button">
+                <input placeholder="Emailiniz qeyd edin" type="email">
+                <button class="subscription_button">Abunə ol</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer_area">
+        <footer class="footer_abouts">
+            <div class="footer_about">
+                <h1 class="footer_header">Arzum Beauty</h1>
+                <h3 class="footer_head">Haqqımızda</h3>
+                <h3 class="footer_head">Blog</h3>
+                <h3 class="footer_head">Karyera</h3>
+                <h3 class="footer_head">Korporativ məsuliyyət</h3>
+                <h3 class="footer_head">Filiallar</h3>
+            </div>
+
+            <div class="footer_about">
+                <h1 class="footer_header">Menu</h1>
+                <h3 class="footer_head">Məşhur brendlər</h3>
+                <h3 class="footer_head">Kampaniyalar</h3>
+                <h3 class="footer_head">Endirimlər və kuponlar</h3>
+                <h3 class="footer_head">Hədiyyələr</h3>
+            </div>
+
+            <div class="footer_about">
+                <h1 class="footer_header">Kömək</h1>
+                <h3 class="footer_head">Tez-tez soruşulan suallar</h3>
+                <h3 class="footer_head">Müştəri xidmətləri</h3>
+                <h3 class="footer_head">Çatdırılma xidməti</h3>
+                <h3 class="footer_head">Geri qaytarılma şərtləri</h3>
+                <h3 class="footer_head"><a href="./profile_ordered.html">Məhsulu izləmə</a></h3>
+            </div>
+
+            <div class="footer_about">
+                <h1 class="footer_header">Əlaqə</h1>
+                <ul class="footer_links">
+                    <li class="footer_link"><a href="https://www.instagram.com/arzumbeauty_house/"><img
+                                src="./image/instagram.svg" alt="instagram"></a></li>
+                    <li class="footer_link"><a href="https://www.facebook.com/"><img src="./image/facebook.svg"
+                                alt="facebook"></a></li>
+                    <li class="footer_link"><a href="https://www.youtube.com/c/ArzuKerimli/videos"><img
+                                src="./image/youtube.svg" alt="youtube"></a></li>
+                    <li class="footer_link"><a href="https://twitter.com/"><img src="./image/twitter.svg"
+                                alt="twitter"></a></li>
+                </ul>
+                <h3 class="footer_header_child_header">Qəbul edilən kartlar</h3>
+                <div class="footer_carts"><img src="./image/carts.svg" alt="carts"></div>
+            </div>
+
+        </footer>
+        <div class="footer_copyright">
+            <h1 class="copyright">© 2022 Arzum Beauty House</h1>
+            <div class="footer_rules">
+                <h1 class="rule">Qaydalar və şərtlər</h1>
+                <h1 class="rule">Gizlilik siyasəti</h1>
+            </div>
+        </div>
+    </section>
+
+    <script src="./js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"
+        integrity="sha512-h9kKZlwV1xrIcr2LwAPZhjlkx+x62mNwuQK5PAu9d3D+JXMNlGx8akZbqpXvp0vA54rz+DrqYVrzUGDMhwKmwQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.same_products').slick({
+                infinite: true,
+                arrows: true,
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                responsive: [{
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    }
+                }]
+
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.advertisement').slick({
+                infinite: true,
+                arrows: false,
+                autoplay: true,
+                autoplaySpeed: 5000,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                responsive: [{
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    }
+                }]
+
+            });
+        });
+    </script>
+
+    <script>
+        /* Slick needs no get Reinitialized on window Resize after it was destroyed */
+        $(window).on('load resize orientationchange', function () {
+            $('.main_img_area').each(function () {
+                var $carousel = $(this);
+                /* Initializes a slick carousel only on mobile screens */
+                // slick on mobile
+                if ($(window).width() > 576) {
+                    if ($carousel.hasClass('slick-initialized')) {
+                        $carousel.slick('unslick');
+                    }
+                }
+                else {
+                    if (!$carousel.hasClass('slick-initialized')) {
+                        $carousel.slick({
+                            dots: true,
+                            infinite: true,
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            mobileFirst: true,
+                        });
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

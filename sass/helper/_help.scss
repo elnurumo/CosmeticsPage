@@ -1,0 +1,41 @@
+html {
+    font-size: 10px;
+    font-family: 'Euclid Circular A', sans-serif;
+}
+
+
+.stars_evaluations {
+
+    .rating__star {
+        width: 3rem;
+        height: 2.4rem;
+        font-size: 2.4rem;
+        cursor: pointer;
+        color: #F2994A;
+    }
+}
+
+#password {
+    padding-right: 5rem;
+}
+
+.slick-prev:before {
+    color: black !important;
+}
+
+.slick-next:before {
+    color: black !important;
+}
+
+.slick-track {
+    display: flex !important;
+}
+
+.slick-slide {
+    height: inherit !important;
+}
+
+.product_active_img {
+    border: solid black 1px;
+    border-radius: 4px;
+}
